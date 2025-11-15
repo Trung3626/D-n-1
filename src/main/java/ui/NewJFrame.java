@@ -24,11 +24,8 @@ public class NewJFrame extends javax.swing.JFrame {
         String url = "https://img.vietqr.io/image/mbbank-0329094765-compact.jpg?amount=%s&addInfo=%s&accountName=".formatted("36000", "Hieu%20junior");
         System.out.println(url);
         try {
-            // Tải ảnh từ URL
             URL imageUrl = new URL(url);
             ImageIcon imageIcon = new ImageIcon(imageUrl);
-
-            // Tạo JLabel để hiển thị ảnh
             jLabel1.setIcon(imageIcon);
 
         } catch (Exception e) {
